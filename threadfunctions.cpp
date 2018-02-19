@@ -7,7 +7,7 @@ unsigned GetHardwareConcurrency()
     return std::thread::hardware_concurrency();
 }
 
-double SingleThreadCalculation(size_t i_thread)
+double SingleThreadCalculation(unsigned i_thread)
 {
     unsigned result = 0u;
     while(true) {
